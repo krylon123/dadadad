@@ -7,7 +7,7 @@ getgenv().Krylon = {
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'}, -- [[ Wall, Knocked, Grabbed, Vehicle ]]
-        ['Keybind'] = 'Y',
+        ['Keybind'] = 'Q',
         ['Hit Location'] = {
             ['Type'] = 'Closest Part', -- [[ Closest Part or Closest Point ]]
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'} --- you can put more than one parts
@@ -19,10 +19,10 @@ getgenv().Krylon = {
         },
         ['Prediction'] = {
             ['Sets'] = {
-                ["Low"] = 0.1431,
-                ["Medium"] = 0.1842,
-                ["High"] = 0.19231,
-                ["Extreme"] = 0.12314,
+                ["Low"] = 0.12431,
+                ["Medium"] = 0.12434,
+                ["High"] = 0.1244,
+                ["Extreme"] = 0.12446,
 
             }
         },
@@ -32,12 +32,12 @@ getgenv().Krylon = {
         ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'},
         ['Keybind'] = 'E',
         ['Hit Location'] = {
-            ['Type'] = 'Closest Point', -- [[ Closest Part or Closest Point ]]
+            ['Type'] = 'Closest Part', -- [[ Closest Part or Closest Point ]]
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'} --- you can put more than one parts
         },
         ['Fov'] = {
             ['Enabled'] = true,
-                ['Value'] = 8.5,
+                ['Value'] = 13,
                 ['Show Fov'] = false,
         },
         ['Prediction'] = {
@@ -52,7 +52,7 @@ getgenv().Krylon = {
     },
     ['Camlock'] = {
         ['Enabled'] = true,
-        ['Keybind'] = 'Q',
+        ['Keybind'] = 'Y',
         ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'},
         ['Fov'] = 10,
         ['Show Fov'] = false,
@@ -76,7 +76,7 @@ getgenv().Krylon = {
     },
     ['Trigger bot'] = {
         ['Enabled'] = true,
-        ['Prediction'] = 0,
+        ['Prediction'] = 0.0035,
         ['Weapons'] = {
             '[Double-Barrel SG]',
             '[Revolver]',
@@ -87,7 +87,7 @@ getgenv().Krylon = {
             ['Keybind Mode'] = 'Toggle' -- hold or toggle
         },
         ['Delay'] = {    
-            ['Value'] = 0.01,
+            ['Value'] = 0.07,
         },
         ['HitParts'] = {
             ['Type'] = false,
@@ -106,9 +106,9 @@ getgenv().Krylon = {
     },
     ['Speed Modifications'] = {
         ['Options'] = {
-            ['Enabled'] = true, -- reset before working
+            ['Enabled'] = true, 
             ['DefaultSpeed'] = 35,
-            ['ToggleMode'] = false, -- if you want togglemovement to work
+            ['ToggleMode'] = true, -- if you want togglemovement to work
             ['Keybinds'] = {
                 ['ToggleMovement'] = 'V',
                 ['Speed +5'] = 'M',
@@ -116,17 +116,22 @@ getgenv().Krylon = {
             }
         }
     },
-    ['Spread modifications'] = { 
-        ['Mode'] = "Randomizer", -- Normal or Randomizer
-        ['Spread Modifier'] = {
-            Multiplier = 0.1
-        },
-        ['Spread Randomizer'] = {
-            Start = 1,
-            End = 1
-        },
-        ['Enabled'] = false,
-        ['Toggle Key'] = "G"
+    ['Spread modifications'] = {
+        ['Options'] = {
+            ['Enabled'] = true, 
+            ['Multiplier'] = 0.01,
+            ['ToggleMode'] = true,
+            ['Keybinds'] = {
+                ['ToggleSpread'] = 'G',
+                ['Spread +0.1'] = 'J',
+                ['Spread -0.1'] = 'K'
+            },
+            ['Spread Randomizer'] = {
+                ['Enabled'] = false,
+                ['Start'] = 1,
+                ['End'] = 1
+            }
+        }
     },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0866520b8ba9f267faa389c6055fe084.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/06da5e5415f2185d213d46bd368321f7.lua"))()
