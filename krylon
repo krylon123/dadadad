@@ -7,7 +7,6 @@ getgenv().Krylon = {
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'}, -- [[ Wall, Knocked, Grabbed, Vehicle ]]
-        ['Keybind'] = 'Q',
         ['Hit Location'] = {
             ['Type'] = 'Closest Part', -- [[ Closest Part or Closest Point ]]
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'} --- you can put more than one parts
