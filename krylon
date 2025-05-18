@@ -129,4 +129,4 @@ getgenv().Krylon = {
         ['Toggle Key'] = "G"
     },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/250a1ae4cd3b1142ee03fcf1141a0f8e.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0866520b8ba9f267faa389c6055fe084.lua"))()
