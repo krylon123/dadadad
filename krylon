@@ -13,21 +13,19 @@ getgenv().Krylon = {
         },
         ['Fov'] = {
             ['Enabled'] = true,
-                ['Value'] = 13,
+                ['Value'] = 50,
                 ['Show Fov'] = false,
         },
         ['Prediction'] = {
             ['Sets'] = {
-                ["Low"] = 0.12431,
-                ["Medium"] = 0.12434,
-                ["High"] = 0.1244,
-                ["Extreme"] = 0.12446,
-
+                ["X"] = 0.12351,
+                ["Y"] = 0.1851,
+                ["Z"] = 0.14351
             }
         },
     },
     ['Target Aim'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'},
         ['Keybind'] = 'E',
         ['Hit Location'] = {
@@ -41,16 +39,15 @@ getgenv().Krylon = {
         },
         ['Prediction'] = {
             ['Sets'] = {
-                ["Low"] = 0,
-                ["Medium"] = 0,
-                ["High"] = 0,
-                ["Extreme"] = 0,
+                ["X"] = 0.12351,
+                ["Y"] = 0.1851,
+                ["Z"] = 0.14351
 
             }
         },
     },
     ['Camlock'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Keybind'] = 'Y',
         ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'},
         ['Fov'] = 10,
@@ -68,14 +65,14 @@ getgenv().Krylon = {
         },
     
         ['Prediction'] = {  
-            ['Low'] = 0.1225, 
-            ['Medium'] = 0.1225, 
-            ['High'] = 0.1225 
+            ['X'] = 0.1225, 
+            ['Y'] = 0.1225, 
+            ['Z'] = 0.1225 
         }
     },
     ['Trigger bot'] = {
         ['Enabled'] = true,
-        ['Prediction'] = 0.0035,
+        ['Prediction'] = 0,
         ['Weapons'] = {
             '[Double-Barrel SG]',
             '[Revolver]',
@@ -86,7 +83,7 @@ getgenv().Krylon = {
             ['Keybind Mode'] = 'Toggle' -- hold or toggle
         },
         ['Delay'] = {    
-            ['Value'] = 0.07,
+            ['Value'] = 0.01,
         },
         ['HitParts'] = {
             ['Type'] = false,
@@ -94,7 +91,7 @@ getgenv().Krylon = {
         },
         ['Custom Size'] = {
             ['Enabled'] = true, 
-            ['Value'] = 13
+            ['Value'] = 50
         },
     },
     ['Range'] = {
@@ -117,7 +114,7 @@ getgenv().Krylon = {
     },
     ['Spread modifications'] = {
         ['Options'] = {
-            ['Enabled'] = true, 
+            ['Enabled'] = false, 
             ['Multiplier'] = 0.01,
             ['ToggleMode'] = true,
             ['Keybinds'] = {
