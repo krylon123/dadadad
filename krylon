@@ -13,14 +13,14 @@ getgenv().Krylon = {
         },
         ['Fov'] = {
             ['Enabled'] = true,
-                ['Value'] = 50,
-                ['Show Fov'] = false,
+                ['Value'] = 10,
+                ['Show Fov'] = true,
         },
         ['Prediction'] = {
             ['Sets'] = {
-                ["X"] = 0.12351,
-                ["Y"] = 0.1851,
-                ["Z"] = 0.14351
+                ["X"] = 0.123,
+                ["Y"] = 0.123,
+                ["Z"] = 0.123
             }
         },
     },
@@ -47,8 +47,8 @@ getgenv().Krylon = {
         },
     },
     ['Camlock'] = {
-        ['Enabled'] = false,
-        ['Keybind'] = 'Y',
+        ['Enabled'] = true,
+        ['Keybind'] = 'Q',
         ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'},
         ['Fov'] = 10,
         ['Show Fov'] = false,
@@ -79,11 +79,11 @@ getgenv().Krylon = {
             '[TacticalShotgun]'
         },
         ['Keybind'] = {
-            ['Bind'] = 'T',
-            ['Keybind Mode'] = 'Toggle' -- hold or toggle
+            ['Bind'] = 'M1',
+            ['Keybind Mode'] = 'Hold' -- hold or toggle
         },
         ['Delay'] = {    
-            ['Value'] = 0.01,
+            ['Value'] = 0,
         },
         ['HitParts'] = {
             ['Type'] = false,
@@ -91,7 +91,7 @@ getgenv().Krylon = {
         },
         ['Custom Size'] = {
             ['Enabled'] = true, 
-            ['Value'] = 50
+            ['Value'] = 10
         },
     },
     ['Range'] = {
@@ -99,6 +99,15 @@ getgenv().Krylon = {
         ['Silent Aim'] = 250,
         ['Camlock'] = 250,
         ['Trigger bot'] = 250
+    },
+    ["Gun Delay"] = {
+        ["Enabled"] = true,
+        ["Weapons"] = {
+            ["Double-Barrel SG"] = 0.01,
+            ["Revolver"] = 0.01,
+            ["TacticalShotgun"] = 0.01,
+        -- if you want a add a gun js [""] = 0.11 just put the name inside the qutation mark
+        },
     },
     ['Speed Modifications'] = {
         ['Options'] = {
@@ -114,7 +123,7 @@ getgenv().Krylon = {
     },
     ['Spread modifications'] = {
         ['Options'] = {
-            ['Enabled'] = false, 
+            ['Enabled'] = true, 
             ['Multiplier'] = 0.01,
             ['ToggleMode'] = true,
             ['Keybinds'] = {
@@ -130,4 +139,3 @@ getgenv().Krylon = {
         }
     },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7af2c75e61224c3fdf87a1c243b426cb.lua"))()
