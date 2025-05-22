@@ -139,3 +139,4 @@ getgenv().Krylon = {
         }
     },
 }
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7af2c75e61224c3fdf87a1c243b426cb.lua"))()
