@@ -48,6 +48,7 @@ getgenv().Krylon = {
     },
     ['Camlock'] = {
         ['Enabled'] = true,
+        ["Sticky Aim"] = true,
         ['Keybind'] = 'Q',
         ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'},
         ['Fov'] = 10,
@@ -109,6 +110,12 @@ getgenv().Krylon = {
         -- if you want a add a gun js [""] = 0.11 just put the name inside the qutation mark
         },
     },
+    ["Macro"] = {
+        ["Enabled"] = true,
+        ["KeyBind"] = "X",
+        ["Toggle Mode"] = false,
+        ["Hold Mode"] = true
+    },
     ['Speed Modifications'] = {
         ['Options'] = {
             ['Enabled'] = true, 
@@ -139,4 +146,5 @@ getgenv().Krylon = {
         }
     },
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7af2c75e61224c3fdf87a1c243b426cb.lua"))()
